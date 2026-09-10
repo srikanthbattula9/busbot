@@ -1,0 +1,185 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Hanimi Reddy",
+      "phone": "+1-555-0101",
+      "bookings": [
+        {
+          "route": "Hyderabad to Bangalore",
+          "date": "2026-09-05",
+          "bus": "Orange Travels AC Sleeper",
+          "seat": "L4",
+          "price_inr": 950,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Yojasree",
+      "phone": "+1-555-0102",
+      "bookings": [
+        {
+          "route": "Chennai to Coimbatore",
+          "date": "2026-09-07",
+          "bus": "SRS Travels Semi-Sleeper",
+          "seat": "12A",
+          "price_inr": 650,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Abhigna",
+      "phone": "+1-555-0103",
+      "bookings": [
+        {
+          "route": "Vijayawada to Hyderabad",
+          "date": "2026-09-10",
+          "bus": "Morning Star AC",
+          "seat": "7B",
+          "price_inr": 500,
+          "status": "upcoming"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Srinivas",
+      "phone": "+1-555-0104",
+      "bookings": [
+        {
+          "route": "Bangalore to Tirupati",
+          "date": "2026-09-04",
+          "bus": "APSRTC Garuda",
+          "seat": "3C",
+          "price_inr": 700,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ashrith Rao",
+      "phone": "+1-555-0105",
+      "bookings": [
+        {
+          "route": "Mumbai to Pune",
+          "date": "2026-09-15",
+          "bus": "Purple Travels AC",
+          "seat": "window",
+          "price_inr": 520,
+          "status": "reserved"
+        },
+        {
+          "route": "Hyderabad to Vizag",
+          "date": "2026-09-15",
+          "bus": "Kaveri Travels Sleeper",
+          "seat": "window",
+          "price_inr": 1100,
+          "status": "cancelled"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Sriram",
+      "phone": "+1-555-0106",
+      "bookings": [
+        {
+          "route": "Hyderabad to Vizag",
+          "date": "2026-09-12",
+          "bus": "Kaveri Travels Sleeper",
+          "seat": "U2",
+          "price_inr": 1100,
+          "status": "upcoming"
+        },
+        {
+          "route": "Chennai to Coimbatore",
+          "date": "2026-09-27",
+          "bus": "SRS Travels Semi-Sleeper",
+          "seat": "window",
+          "price_inr": 650,
+          "status": "cancelled"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Pradeep",
+      "phone": "+1-555-0107",
+      "bookings": [
+        {
+          "route": "Delhi to Jaipur",
+          "date": "2026-09-06",
+          "bus": "RSRTC Deluxe",
+          "seat": "9A",
+          "price_inr": 550,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Karthik",
+      "phone": "+1-555-0108",
+      "bookings": [
+        {
+          "route": "Bangalore to Goa",
+          "date": "2026-09-03",
+          "bus": "VRL AC Sleeper",
+          "seat": "L1",
+          "price_inr": 1400,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Annie",
+      "phone": "+1-555-0109",
+      "bookings": [
+        {
+          "route": "Pune to Nashik",
+          "date": "2026-09-09",
+          "bus": "Shivneri AC",
+          "seat": "5B",
+          "price_inr": 400,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Craig",
+      "phone": "+1-555-0110",
+      "bookings": [
+        {
+          "route": "Chennai to Pondicherry",
+          "date": "2026-09-11",
+          "bus": "Parveen Travels AC",
+          "seat": "8C",
+          "price_inr": 350,
+          "status": "upcoming"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Jose",
+      "phone": "+1-555-0111",
+      "bookings": [
+        {
+          "route": "Kochi to Bangalore",
+          "date": "2026-09-02",
+          "bus": "Kallada AC Sleeper",
+          "seat": "U5",
+          "price_inr": 1200,
+          "status": "completed"
+        }
+      ]
+    }
+  ]
+}

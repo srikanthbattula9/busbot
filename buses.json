@@ -1,0 +1,76 @@
+{
+  "available_buses": [
+    {
+      "bus_id": "B001",
+      "route": "Mumbai to Pune",
+      "operator": "Neeta AC Volvo",
+      "departure": "06:00",
+      "price_inr": 450,
+      "seats_left": 12
+    },
+    {
+      "bus_id": "B002",
+      "route": "Mumbai to Pune",
+      "operator": "Purple Travels AC",
+      "departure": "09:30",
+      "price_inr": 520,
+      "seats_left": 4
+    },
+    {
+      "bus_id": "B003",
+      "route": "Mumbai to Pune",
+      "operator": "Shivneri Express",
+      "departure": "14:00",
+      "price_inr": 380,
+      "seats_left": 19
+    },
+    {
+      "bus_id": "B004",
+      "route": "Hyderabad to Vizag",
+      "operator": "Kaveri Travels Sleeper",
+      "departure": "21:00",
+      "price_inr": 1100,
+      "seats_left": 8
+    },
+    {
+      "bus_id": "B005",
+      "route": "Hyderabad to Bangalore",
+      "operator": "Orange Travels AC Sleeper",
+      "departure": "22:30",
+      "price_inr": 950,
+      "seats_left": 3
+    },
+    {
+      "bus_id": "B006",
+      "route": "Chennai to Coimbatore",
+      "operator": "SRS Travels Semi-Sleeper",
+      "departure": "07:15",
+      "price_inr": 650,
+      "seats_left": 15
+    },
+    {
+      "bus_id": "B007",
+      "route": "Pune to Mumbai",
+      "operator": "Neeta AC Volvo",
+      "departure": "18:00",
+      "price_inr": 450,
+      "seats_left": 10
+    },
+    {
+      "bus_id": "B008",
+      "route": "Vizag to Hyderabad",
+      "operator": "Kaveri Travels Sleeper",
+      "departure": "20:30",
+      "price_inr": 1100,
+      "seats_left": 6
+    },
+    {
+      "bus_id": "B009",
+      "route": "Bangalore to Hyderabad",
+      "operator": "Orange Travels AC Sleeper",
+      "departure": "21:45",
+      "price_inr": 950,
+      "seats_left": 9
+    }
+  ]
+}
