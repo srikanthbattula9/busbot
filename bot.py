@@ -23,6 +23,38 @@ if not found:
     print("Unknown caller.")
     exit()
 
+from datetime import date as date_type
+
+def days_until(date_str):
+    y, m, d = map(int, date_str.split("-"))
+    today_y, today_m, today_d = map(int, TODAY.split("-"))
+    return (date_type(y, m, d) - date_type(today_y, today_m, today_d)).days
+
+def build_insights(customer):
+    insights = []
+    reserved = [b for b in customer["bookings"] if b["status"] == "reserved"]
+    cancelled = [b for b in customer["bookings"] if b["status"] == "cancelled"]
+
+    for b in reserved:
+        d = days_until(b["date"])
+        if d < 0:
+            insights.append(f"Their {b['route']} trip on {b['date']} has already passed — status may need updating.")
+        elif d == 0:
+            insights.append(f"URGENT: Their {b['route']} trip is TODAY.")
+        elif d <= 2:
+            insights.append(f"Their {b['route']} trip is in {d} day(s) — worth a proactive check-in.")
+        elif d <= 7:
+            insights.append(f"Their {b['route']} trip is coming up in {d} days.")
+
+    if cancelled and not reserved:
+        insights.append(f"They recently cancelled their {cancelled[-1]['route']} trip and have nothing else booked — a good moment to offer to rebook.")
+
+    routes = [b["route"] for b in customer["bookings"]]
+    if len(routes) != len(set(routes)):
+        insights.append("They've booked the same route more than once — likely a regular on this route, mention it feels familiar.")
+
+    return insights if insights else ["No urgent items. Standard friendly greeting."]
+
 # ---------- TOOLS: your code does the real work ----------
 
 def save_all():
@@ -98,12 +130,15 @@ tools = [
             "required": ["route_query"]}
     }
 ]
-
+insights = build_insights(found)
 system_prompt = f"""You are Maya, RedBus's personal travel assistant, on a call with {found['name']}.
 Today's date: {TODAY}.
 
 CUSTOMER'S FULL BOOKING HISTORY (oldest to newest):
 {json.dumps(found['bookings'], indent=2)}
+
+THINGS YOU'VE NOTICED ABOUT THIS CUSTOMER (weave ONE into your opening naturally, don't list them):
+{chr(10).join('- ' + i for i in insights)}
 
 PERSONALITY:
 - Warm, human, brief — like a great phone agent, not a form. No emojis.
